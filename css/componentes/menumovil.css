@@ -1,0 +1,41 @@
+.nav-anima {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  -webkit-clip-path: circle(0% at 100% 0);
+          clip-path: circle(0% at 100% 0);
+  z-index: 1000;
+  -webkit-animation: menu 5s infinite;
+          animation: menu 5s infinite;
+}
+
+@-webkit-keyframes menu {
+  0% {
+    -webkit-clip-path: circle(0% at 100% 0);
+            clip-path: circle(0% at 100% 0);
+  }
+  50% {
+    -webkit-clip-path: circle(200% at 100% 0);
+            clip-path: circle(200% at 100% 0);
+  }
+  100% {
+    -webkit-clip-path: circle(0% at 100% 0);
+            clip-path: circle(0% at 100% 0);
+  }
+}
+
+@keyframes menu {
+  0% {
+    -webkit-clip-path: circle(0% at 100% 0);
+            clip-path: circle(0% at 100% 0);
+  }
+  50% {
+    -webkit-clip-path: circle(200% at 100% 0);
+            clip-path: circle(200% at 100% 0);
+  }
+  100% {
+    -webkit-clip-path: circle(0% at 100% 0);
+            clip-path: circle(0% at 100% 0);
+  }
+}

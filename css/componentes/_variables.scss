@@ -1,11 +1,14 @@
 
 $color-transparencia1: #ffffff48;
-$color-1: #ffffff;
-$color-2: #f3f8f9;
-$color-3: #e9f1f2;
-$color-4: #dbe9ec;
-$color-5: #c9dcdf;
-$color-fondo: #b7cfd2;
+$color-1: #f0f5fb;
+$color-2: #e8f1f8;
+$color-3: #dee8f4;
+$color-4: #cfdae9;
+$color-5: #c9d4e6;
+$color-6: #c0ccdb;
+$color-7: #d5d5de;
+$color-8: #bdbdc5;
+$color-9: #9f9ea8;
 
 * {
     box-sizing: border-box;
@@ -15,4 +18,5 @@ $color-fondo: #b7cfd2;
 
 html {
     font-size: 62.5%;
+    font-family: 'GFS Neohellenic', sans-serif;
 }

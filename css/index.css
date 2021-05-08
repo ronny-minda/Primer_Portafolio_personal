@@ -7,19 +7,112 @@
 
 html {
   font-size: 62.5%;
+  font-family: "GFS Neohellenic", sans-serif;
 }
 
 body {
   height: 100vh;
-  background: url(https://i0.wp.com/hipertextual.com/wp-content/uploads/2013/11/Wallpaper-Monta%C3%B1as.jpg?fit=1200%2C800&ssl=1);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#c9d4e6), to(#f0f5fb));
+  background-image: linear-gradient(to left top, #c9d4e6, #f0f5fb);
 }
 
-header {
-  height: 50rem;
+.header-movil {
+  height: 8rem;
   width: 100%;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 70%, 50% 100%, 0 70%);
-          clip-path: polygon(0 0, 100% 0%, 100% 70%, 50% 100%, 0 70%);
-  background-color: #ffffff48;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  background-color: #e8f1f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  -webkit-box-shadow: 0px -20px 10px 29px #c0ccdb;
+          box-shadow: 0px -20px 10px 29px #c0ccdb;
 }
+.header-movil .logo {
+  margin: auto 1rem;
+  background-color: red;
+  height: 5rem;
+  width: 5rem;
+}
+.header-movil .nav {
+  height: 100%;
+  width: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-movil .nav a {
+  height: 3rem;
+  width: 3rem;
+  margin: auto 4rem auto auto;
+}
+.header-movil .nav a img {
+  height: 3.5rem;
+  width: 3.5rem;
+  position: absolute;
+  z-index: 10000;
+}
+
+.nav-anima {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #c9d4e6;
+  -webkit-clip-path: circle(0% at 100% 0);
+          clip-path: circle(0% at 100% 0);
+  z-index: 1000;
+  -webkit-transition: 0.7s ease all;
+  transition: 0.7s ease all;
+}
+
+.menu-activo {
+  -webkit-clip-path: circle(200% at 100% 0);
+          clip-path: circle(200% at 100% 0);
+}
+
+.menu {
+  -webkit-clip-path: circle(0% at 100% 0);
+          clip-path: circle(0% at 100% 0);
+}
+
+/* MENU DESPLEGABLE */
+.nav-anima ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.nav-anima ul li {
+  list-style: none;
+  margin: 2rem;
+  text-align: center;
+}
+.nav-anima ul li a {
+  text-decoration: none;
+  font-size: 4rem;
+  color: #f0f5fb;
+}
+
+/* 
+.nav-anima .nav ul {
+    margin: auto ;
+    height: 100%;
+    background-color: red;
+}
+
+header .nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 1rem;
+} */
