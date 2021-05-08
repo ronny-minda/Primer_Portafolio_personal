@@ -1,1 +1,25 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background: url(https://i0.wp.com/hipertextual.com/wp-content/uploads/2013/11/Wallpaper-Monta%C3%B1as.jpg?fit=1200%2C800&ssl=1);
+}
+
+header {
+  height: 50rem;
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 70%, 50% 100%, 0 70%);
+          clip-path: polygon(0 0, 100% 0%, 100% 70%, 50% 100%, 0 70%);
+  background-color: #ffffff48;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
