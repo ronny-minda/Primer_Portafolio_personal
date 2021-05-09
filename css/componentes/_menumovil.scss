@@ -26,13 +26,25 @@
     height: 100%;
     width: 100%;
     li {
+        height: 7rem;
         list-style: none;
         margin: 2rem;
         text-align: center;
         a {
+            display: inline-block;
+            width: 100%;
+            padding: 1rem .9rem;
             text-decoration: none;
             font-size: 4rem;
             color: $color-1;
+            background-color: $color-6;
+            border-radius: 2rem;
+            /* box-shadow: 7px 7px 0px 7px $color-7, -7px -7px 0px 14px $color-3; */
+            box-shadow: 8px 11px 18px 0px $color-7, -8px -8px 20px 3px $color-3;
+            img {
+                height: 5rem;
+                width: 5rem;
+            }
         }
     }
 }
