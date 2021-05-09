@@ -146,12 +146,61 @@ main {
   height: 20rem;
   width: 40rem;
   border-radius: 2rem;
-  background-color: #f0f5fbaa;
+  background-color: #dee8f4;
   -webkit-box-shadow: 13px 15px 18px 0px #c9d4e6, -8px -8px 10px 3px #f0f5fb;
           box-shadow: 13px 15px 18px 0px #c9d4e6, -8px -8px 10px 3px #f0f5fb;
+  position: relative;
+  /*     @keyframes color {
+          0%{}
+          50%{background-position:0% 100%}
+          100%{background-position:93% 0%}
+      } */
 }
 .sobre-mi div {
   height: 5rem;
   width: 5rem;
-  background-color: red;
+  background-color: blue;
+  border-radius: 0% 100% 47% 40%/0% 100% 0% 40%;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid red;
+  border-right: 1px solid red;
+  /* background: linear-gradient(30deg, rgba(183,204,176,1) 
+  0%, rgba(174,85,215,1) 
+  17%, rgba(207,152,222,1) 
+  42%, rgba(123,175,218,1) 
+  70%, rgba(133,10,10,1) 100%); */
+  background: linear-gradient(229deg, #ae55d7, #cf98de, #7bafda, rgba(133, 10, 10, 0.638));
+  background-size: 800% 800%;
+  -webkit-animation: a 10s linear infinite;
+          animation: a 10s linear infinite;
+  /* animation: color 50s ease infinite; */
+}
+@-webkit-keyframes a {
+  0% {
+    border-radius: 0% 100% 47% 40%/0% 50% 0% 40%;
+    background-position: 93% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+    border-radius: 0% 50% 47% 40%/0% 100% 0% 40%;
+  }
+  100% {
+    background-position: 93% 0%;
+    border-radius: 0% 100% 47% 40%/0% 50% 0% 40%;
+  }
+}
+@keyframes a {
+  0% {
+    border-radius: 0% 100% 47% 40%/0% 50% 0% 40%;
+    background-position: 93% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+    border-radius: 0% 50% 47% 40%/0% 100% 0% 40%;
+  }
+  100% {
+    background-position: 93% 0%;
+    border-radius: 0% 100% 47% 40%/0% 50% 0% 40%;
+  }
 }
