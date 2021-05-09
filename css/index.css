@@ -1,3 +1,5 @@
+/* COLORES TRASNPARENTES */
+/* COLORES NORMALES */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -137,11 +139,19 @@ header .nav ul li {
 main {
   width: 80%;
   margin: 0 auto;
-  background-color: rebeccapurple;
+  margin-top: 2.5rem;
 }
 
 .sobre-mi {
+  height: 20rem;
+  width: 40rem;
+  border-radius: 2rem;
+  background-color: #f0f5fbaa;
+  -webkit-box-shadow: 13px 15px 18px 0px #c9d4e6, -8px -8px 10px 3px #f0f5fb;
+          box-shadow: 13px 15px 18px 0px #c9d4e6, -8px -8px 10px 3px #f0f5fb;
+}
+.sobre-mi div {
   height: 5rem;
   width: 5rem;
-  background-color: #dc8a1f;
+  background-color: red;
 }

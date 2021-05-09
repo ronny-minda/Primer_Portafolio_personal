@@ -1,10 +1,17 @@
 main {
     width: 80%;
     margin: 0 auto;
-    background-color: rebeccapurple;
+    margin-top: 2.5rem;
 }
 .sobre-mi {
-    height: 5rem;
-    width: 5rem;
-    background-color: rgb(220, 138, 31);
+    height: 20rem;
+    width: 40rem;
+    border-radius: 2rem;
+    background-color: $color-transparencia-1;
+    box-shadow: 13px 15px 18px 0px $color-5, -8px -8px 10px 3px $color-1;
+    div {
+        height: 5rem;
+        width: 5rem;
+        background-color: red;
+    }
 }
