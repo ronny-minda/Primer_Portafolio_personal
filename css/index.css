@@ -1,5 +1,6 @@
 /* COLORES TRASNPARENTES */
 /* COLORES NORMALES */
+/* COLORES BOTONES */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -13,7 +14,7 @@ html {
 }
 
 body {
-  height: 100vh;
+  height: auto;
   width: 100%;
   background-repeat: no-repeat;
   background-image: -webkit-gradient(linear, right bottom, left top, from(#c9d4e6), to(#f0f5fb));
@@ -138,43 +139,89 @@ header .nav ul li {
 } */
 main {
   width: 80%;
+  height: auto;
   margin: 0 auto;
   margin-top: 2.5rem;
+  position: relative;
+  /* background-color: red; */
 }
-
-.sobre-mi {
-  height: 20rem;
-  width: 40rem;
+main .sobre-mi {
+  height: 30rem;
+  width: 60%;
   border-radius: 2rem;
   background-color: #dee8f4;
   -webkit-box-shadow: 13px 15px 18px 0px #c9d4e6, -8px -8px 10px 3px #f0f5fb;
           box-shadow: 13px 15px 18px 0px #c9d4e6, -8px -8px 10px 3px #f0f5fb;
-  position: relative;
-  /*     @keyframes color {
-          0%{}
-          50%{background-position:0% 100%}
-          100%{background-position:93% 0%}
-      } */
 }
-.sobre-mi div {
+main .sobre-mi div {
+  padding: 1.5rem 1rem 1rem 1rem;
+}
+main .sobre-mi div span {
+  font-size: 1.7rem;
+  /* background-color: red; */
+}
+main .sobre-mi div h1 {
+  font-size: 4rem;
+}
+main .sobre-mi div h4 {
+  font-size: 2rem;
+}
+main .sobre-mi .boton-cont {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+  color: #f0f5fb;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#ea7e2b), to(#f7a771));
+  background-image: linear-gradient(to left top, #ea7e2b, #f7a771);
+  border-radius: 0.6rem;
+  -webkit-box-shadow: 0 0 0 rgba(88, 120, 243, 0.4);
+          box-shadow: 0 0 0 rgba(88, 120, 243, 0.4);
+  -webkit-animation: pulseAnim 2s infinite;
+          animation: pulseAnim 2s infinite;
+}
+@-webkit-keyframes pulseAnim {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #ea7e2b66;
+            box-shadow: 0 0 0 0 #ea7e2b66;
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px #ea7e2b00;
+            box-shadow: 0 0 0 10px #ea7e2b00;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 #ea7e2b00;
+            box-shadow: 0 0 0 0 #ea7e2b00;
+  }
+}
+@keyframes pulseAnim {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #ea7e2b66;
+            box-shadow: 0 0 0 0 #ea7e2b66;
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px #ea7e2b00;
+            box-shadow: 0 0 0 10px #ea7e2b00;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 #ea7e2b00;
+            box-shadow: 0 0 0 0 #ea7e2b00;
+  }
+}
+main .sobre-mi .boton-cv {
+  text-decoration: none;
+}
+main .sobre-mi .sobre-mi-animacion1 {
   height: 5rem;
   width: 5rem;
-  background-color: blue;
   border-radius: 0% 100% 47% 40%/0% 100% 0% 40%;
   position: absolute;
   bottom: 0;
-  border-top: 1px solid red;
-  border-right: 1px solid red;
-  /* background: linear-gradient(30deg, rgba(183,204,176,1) 
-  0%, rgba(174,85,215,1) 
-  17%, rgba(207,152,222,1) 
-  42%, rgba(123,175,218,1) 
-  70%, rgba(133,10,10,1) 100%); */
+  border-top: 0px solid red;
+  border-right: 0px solid red;
   background: linear-gradient(229deg, #ae55d7, #cf98de, #7bafda, rgba(133, 10, 10, 0.638));
   background-size: 800% 800%;
-  -webkit-animation: a 10s linear infinite;
-          animation: a 10s linear infinite;
-  /* animation: color 50s ease infinite; */
+  -webkit-animation: a 25s linear infinite;
+          animation: a 25s linear infinite;
 }
 @-webkit-keyframes a {
   0% {
@@ -200,6 +247,103 @@ main {
     border-radius: 0% 50% 47% 40%/0% 100% 0% 40%;
   }
   100% {
+    background-position: 93% 0%;
+    border-radius: 0% 100% 47% 40%/0% 50% 0% 40%;
+  }
+}
+main .sobre-mi .sobre-mi-animacion2 {
+  height: 5.2rem;
+  width: 5.2rem;
+  border-radius: 0% 100% 47% 40%/0% 100% 0% 40%;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #ae55d7;
+  border-right: 1px solid rgba(133, 10, 10, 0.638);
+  /* border: 10px solid transparent;
+
+  border-image: linear-gradient(229deg, 
+  rgba(174,85,215,1) , 
+  rgba(207,152,222,1) , 
+  rgba(123,175,218,1) , 
+  rgba(133, 10, 10, 0.638));
+  background-size: 800% 800%; */
+  -webkit-animation: a1 25s linear infinite;
+          animation: a1 25s linear infinite;
+}
+main .sobre-mi .sobre-mi-animacion3 {
+  height: 5.8rem;
+  width: 5.8rem;
+  border-radius: 0% 100% 47% 40%/0% 100% 0% 40%;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #ae55d7;
+  border-right: 1px solid rgba(133, 10, 10, 0.638);
+  /* border: 10px solid transparent;
+
+  border-image: linear-gradient(229deg, 
+  rgba(174,85,215,1) , 
+  rgba(207,152,222,1) , 
+  rgba(123,175,218,1) , 
+  rgba(133, 10, 10, 0.638));
+  background-size: 800% 800%; */
+  -webkit-animation: a1 25s linear infinite;
+          animation: a1 25s linear infinite;
+}
+main .sobre-mi .sobre-mi-animacion4 {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 0% 100% 47% 40%/0% 100% 0% 40%;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #ae55d7;
+  border-right: 1px solid rgba(133, 10, 10, 0.638);
+  /* border: 10px solid transparent;
+
+  border-image: linear-gradient(229deg, 
+  rgba(174,85,215,1) , 
+  rgba(207,152,222,1) , 
+  rgba(123,175,218,1) , 
+  rgba(133, 10, 10, 0.638));
+  background-size: 800% 800%; */
+  -webkit-animation: a1 25s linear infinite;
+          animation: a1 25s linear infinite;
+}
+@-webkit-keyframes a1 {
+  0% {
+    border-top: 1px solid #ae55d7;
+    border-right: 1px solid #cf98de;
+    border-radius: 0% 100% 47% 40%/0% 50% 0% 40%;
+    background-position: 93% 0%;
+  }
+  50% {
+    border-top: 1px solid #7bafda;
+    border-right: 1px solid rgba(187, 75, 75, 0.638);
+    background-position: 0% 100%;
+    border-radius: 0% 50% 47% 40%/0% 100% 0% 40%;
+  }
+  100% {
+    border-top: 1px solid #ae55d7;
+    border-right: 1px solid #cf98de;
+    background-position: 93% 0%;
+    border-radius: 0% 100% 47% 40%/0% 50% 0% 40%;
+  }
+}
+@keyframes a1 {
+  0% {
+    border-top: 1px solid #ae55d7;
+    border-right: 1px solid #cf98de;
+    border-radius: 0% 100% 47% 40%/0% 50% 0% 40%;
+    background-position: 93% 0%;
+  }
+  50% {
+    border-top: 1px solid #7bafda;
+    border-right: 1px solid rgba(187, 75, 75, 0.638);
+    background-position: 0% 100%;
+    border-radius: 0% 50% 47% 40%/0% 100% 0% 40%;
+  }
+  100% {
+    border-top: 1px solid #ae55d7;
+    border-right: 1px solid #cf98de;
     background-position: 93% 0%;
     border-radius: 0% 100% 47% 40%/0% 50% 0% 40%;
   }
