@@ -17,10 +17,85 @@
             height: 5rem;
             width: 5rem;
         }
+        section {
+            /* background-color: red; */
+            display: flex;
+            align-self: center;
+            li{
+                list-style: none;
+                margin-left: 4rem;
+                /* background-color: red; */
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 2.5rem;
+                    position: relative;
+                    z-index: 1;
+                }
+                a:hover {
+                    color: #fff;
+                }
+                a::before {
+                    content: '';
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    bottom: 0;
+                    left: -0.25em;
+                    right: -0.25em;
+                    background-color: $color-5;
+                    transform-origin: bottom center;
+                    transform: scaleY(0.1);
+                    transition: all 0.1s ease-in-out;
+                }
+                  
+                a:hover::before {
+                    transform: scaleY(1);
+                    background-color: rgba(123,175,218,1);
+                }
+            }
+        }
+
+
+        /* span {
+            position: relative;
+            z-index: 1;
+        }
+          
+        a::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: -0.25em;
+            right: -0.25em;
+            background-color: #fc2f70;
+            transform-origin: bottom center;
+            transform: scaleY(0.1);
+            transition: all 0.1s ease-in-out;
+        }
+          
+        a:hover::before {
+            transform: scaleY(1);
+            background-color: hsla(341, 97%, 59%, 0.75);
+        } */
+          
+
+
+
+        
+
+        @media (max-width: 760px) {
+            section {
+                display: none;
+            }
+        } 
         .nav {
             height: 100%;
             width: 6rem;
             display: flex;
+            /* display: none; */
         }
         .nav a {
             height: 3rem;
@@ -33,6 +108,11 @@
             position: absolute;
             z-index: 10000;
         }
+        @media (min-width: 760px) {
+            .nav {
+                display: none;
+            }
+        } 
     }
     box-shadow: 0px -20px 10px 29px $color-5;
 }
@@ -63,3 +143,5 @@ header .nav ul li {
     list-style: none;
     margin: 1rem;
 } */
+
+
