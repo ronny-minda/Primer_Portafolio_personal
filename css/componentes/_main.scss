@@ -6,37 +6,101 @@ main {
     
     /* background-color: red; */
     section {
-        display: flex;
+        /* display: flex; */
         justify-content: space-around;
+        flex-direction: column;
         .sobre-mi {
-            display: inline-block;
+            /* display: inline-block; */
+            /* width: 100%; */
+            /* width: 70%; */
+
+            display: grid;
+            grid-template-rows: repeat(8, minmax(1rem, 5rem));
+            grid-template-columns: repeat(8, 1fr);
+
             height: 20rem;
-            width: 50%;
             border-radius: 2rem;
             background-color: $color-3;
             box-shadow: 13px 15px 18px 0px $color-5, -8px -8px 10px 3px $color-1;
-            position: relative;
+            /* position: relative; */
             
-            div {
+
+            /* @media (max-width:) {
+                
+            } */
+
+            .tarjeta {
+                grid-column: 1 / 9;
+                grid-row: 1 / 6;
                 padding: 1.5rem 1rem 1rem 1rem;
+                /* background-color: red; */
                 span {
-                    font-size: 1.7rem;
+                    font-size: 1.3rem;
+
                     /* background-color: red; */
                 }
                 h1 {
-                    font-size: 4rem;
+                    font-size: 2.5rem;
                 }
                 h4 {
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                 }
             }
+
+            .btn-tar {
+                grid-column: 3 / 9;
+                grid-row: 7 / 9;
+                /* background-color: blue; */
+                margin: auto;
+                /* padding: 1.5rem 1rem 1rem 1rem; */
+                /* position: absolute;
+                bottom: 0.4rem;
+                right: calc(50% - 45%); */
+                .boton-cv {
+                    text-decoration: none;
+                    font-size: 1.8rem;
+                    padding: 1rem;
+                    margin-left: 1rem;
+                    color: $color-1;
+                    background-image: linear-gradient(to left top, $color-btn2, $color-btn1);
+                    border-radius: 0.6rem;
+                    box-shadow: 0 0 0 0 #ea7e2b66;
+                }
+            
+                .boton-cont {
+                    text-decoration: none;
+                    font-size: 1.8rem;
+                    padding: 1rem;
+                    margin-right: 0.5rem;
+                    color: $color-1;
+                    background-image: linear-gradient(to left top, $color-btn2, $color-btn1);
+                    border-radius: 0.6rem;
+                    box-shadow: 0 0 0 0 #ea7e2b66;
+                    animation: pulseAnim 2s infinite;
+                }
+                
+                @keyframes pulseAnim {
+                    0% {
+                        box-shadow: 0 0 0 0 #ea7e2b66;
+                    }
+                    70% {
+                        box-shadow: 0 0 0 10px #ea7e2b00;
+                    }
+                    100% {
+                        box-shadow: 0 0 0 0 #ea7e2b00;
+                    }
+                }
+            }
+
             @import "./_animaciontar";
         }
         img {
 
             height: 30rem;
-            width: 30rem;
+            width: 70%;
+            text-align: center;
             background-color: red;
+
         }
     }
 }
