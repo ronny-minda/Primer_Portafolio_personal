@@ -5,7 +5,36 @@ main {
     margin-top: 4rem;
     
     /* background-color: red; */
-    @import "./miterjeta";    
+    @import "./miterjeta";
+
+    .main-proyectos {
+        h2 {
+            font-size: 2.5rem;
+        }
+        h3 {
+            font-size: 2rem;
+        }
+        ul {
+            height: auto;
+            width: auto;
+            li {
+                height: auto;
+                width: auto;
+                list-style: none;
+                div {
+                    height: 30rem;
+                    width: 30rem;
+                    background-color: blue;
+                }
+                img {
+                    height: 30rem;
+                    width: 30rem;
+                    background-color: red;
+                    list-style: none;
+                }
+            }
+        }
+    }
 }
 
 
