@@ -35,4 +35,12 @@ html {
     font-family: 'Prompt', sans-serif;
 }
 
+body::-webkit-scrollbar {
+	width: 10px;
+    /* background-color: $color-btn1; */
+}
 
+body::-webkit-scrollbar-thumb {
+	background: $color-8;
+	border-radius: 5px;
+}
