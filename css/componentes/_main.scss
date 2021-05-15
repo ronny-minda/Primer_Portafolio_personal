@@ -6,15 +6,19 @@ main {
         margin: 0 auto;
         margin-top: 4rem;
         
+
+        
         /* background-color: red; */
         @import "./miterjeta";
     
         .main-proyectos {
-            background-color: rgba(255, 255, 255, 0.289);
+            background-color:$color-transparencia-1;
             border-radius: .7rem;
-            border: 1rem solid $color-1;
+            border: 1rem solid #ffffffe0;
             margin-top: 4rem;
-            backdrop-filter: blur(3px);
+            backdrop-filter: blur(20px);
+            position: relative;
+            z-index: 50;
             h2 {
                 font-size: 2.5rem;
             }
@@ -120,7 +124,10 @@ main {
                         border-radius: .5rem;
                         transition-duration: 1s;
                     }
-                    
+                    img:hover ~ .main-animacion2 {
+                        background-color: rgb(255, 255, 255);
+                        animation: burbujas 1s linear infinite;
+                    }
                     img:hover {
                         filter: blur(2px) brightness(70%);
                         -webkit-filter: blur(2px) brightness(70%);
@@ -257,78 +264,208 @@ main {
                             border-radius: .5rem;
                             transition-duration: 1s;
                         }
+
                     }
                 }
                 
             }
 
+        }
+        
 
-
+        .main-animacion2 {
+            height: 91rem;
+            width: 80%;
+            position: absolute;
+            z-index: 5;
+            left: calc(50% - 40%);
+            bottom: 0px;
+            /* background: linear-gradient(179deg, #fba30100, #cf006100, #fb00ff00, #30a8fe00, #00011700); */
+            /* background-color: rgba(255, 0, 0, 0); */
+            background: linear-gradient(to top, #ffffff, #d8d8d8, #727272, #4d4d4d, #000000);
+            /* background: linear-gradient(to top, #fba301, #cf0060, #fb00ff, #30a8fe, #000117); */
+            background-size: 1000% 1000%;
             
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
+            animation: mover 40s ease infinite;
+            filter: opacity(0%);
+            transition: 8s;
         }
     
-        position: relative;
-        z-index: 10;
+    
+        .main-proyectos:hover ~ .main-animacion2 {
+            filter: opacity(100%);
+
+            background: linear-gradient(to top, #ffffff, #d8d8d8, #727272, #4d4d4d, #000000);
+            /* background: linear-gradient(to top, #fba301, #cf0060, #fb00ff, #30a8fe, #000117); */
+            background-size: 1000% 1000%;
+        }
     
         
+    
+        @keyframes mover {
+            0% {
+                background-position:53% 0%;
+                clip-path: polygon(88% 99%, 57% 27%, 16% 28%, 33% 5%, 39% 33%, 0 99%, 23% 48%, 24% 19%, 93% 9%, 41% 100%, 88% 71%, 28% 94%, 61% 4%, 100% 75%, 97% 25%, 76% 6%, 9% 25%, 14% 4%, 16% 81%, 97% 6%);
+            }
+            25% {
+                background-position:50% 50%;
+                clip-path: polygon(37% 80%, 57% 27%, 79% 68%, 73% 97%, 8% 47%, 80% 41%, 97% 90%, 24% 19%, 93% 9%, 94% 55%, 12% 72%, 28% 94%, 61% 4%, 100% 75%, 86% 90%, 76% 6%, 9% 25%, 14% 4%, 92% 96%, 53% 94%);
+            }
+            50% {
+                background-position:48% 100%;
+                clip-path: polygon(63% 40%, 54% 79%, 23% 95%, 55% 99%, 1% 16%, 87% 4%, 99% 53%, 24% 19%, 87% 27%, 61% 55%, 88% 71%, 35% 95%, 40% 29%, 93% 100%, 97% 25%, 76% 6%, 2% 36%, 14% 100%, 0 58%, 67% 100%);
+            }
+            75% {
+                background-position:50% 50%;
+                clip-path: polygon(37% 80%, 57% 27%, 79% 68%, 73% 97%, 8% 47%, 80% 41%, 97% 90%, 24% 19%, 93% 9%, 94% 55%, 12% 72%, 28% 94%, 61% 4%, 100% 75%, 86% 90%, 76% 6%, 9% 25%, 14% 4%, 92% 96%, 53% 94%);
+            }
+            100% {
+                background-position:53% 0%;
+                clip-path: polygon(88% 99%, 57% 27%, 16% 28%, 33% 5%, 39% 33%, 0 99%, 23% 48%, 24% 19%, 93% 9%, 41% 100%, 88% 71%, 28% 94%, 61% 4%, 100% 75%, 97% 25%, 76% 6%, 9% 25%, 14% 4%, 16% 81%, 97% 6%);
+    
+            }
+        }
+    
     }
-    .main-animacion2 {
+
+    
+
+
+    
+    
+
+
+
+    /* .contenedor {
+        height: 10rem;
+        width: 10rem;
+        background-color: #0000ff00;
+        position: absolute;
+        z-index: 5;
+        left: 70%;
+        bottom: 200px;
+
+        transition: 1s;
+        animation: mover 10s linear infinite;
+    }
+    .main-animacion {
         height: 5rem;
         width: 5rem;
         background-color: red;
-        position: absolute;
-        z-index: 5;
+        
         border-radius: 50%;
-        bottom: 200px;
-        left: 70%;
-        transition: 1s;
+
     }
+    
+    .prender {
+
+        background-color: #0000ff;
+        
+    }
+
+    .main-color1 {
+        
+        animation: main-color1 1s linear infinite;
+    }
+    .main-color2 {
+        animation: main-color2 1s linear infinite;
+    }
+    .main-color3 {
+        animation: main-color3 1s linear infinite;
+    }
+    .main-color4 {
+        animation: main-color4 1s linear infinite;
+    }
+    .main-color5 {
+        animation: main-color5 1s linear infinite;
+    }
+    .main-color6 {
+        animation: main-color6 1s linear infinite;
+    }
+
 
     .main:hover ~ .main-animacion2 {
         background-color: rgb(255, 255, 255);
         animation: burbujas 1s linear infinite;
     }
-
-    @keyframes burbujas {
+    @keyframes mover {
         0% {
-            background-color: rgb(255, 0, 0);
+            left: 0%;
         }
         50% {
-            background-color: rgb(255, 255, 255);
+            left: 100%;
         }
         100% {
-            background-color: red;
+            left: 0;
         }
     }
+    @keyframes main-color1 {
+        0% {
+            background-color: #ff0000;
+        }
+        50% {
+            background-color: #ffffff;
+        }
+        100% {
+            background-color: #ff0000;
+        }
+    }
+    @keyframes main-color2 {
+        0% {
+            background-color: #ff7b00;
+        }
+        50% {
+            background-color: #ffffff;
+        }
+        100% {
+            background-color: #ff7b00;
+        }
+    }
+    @keyframes main-color3 {
+        0% {
+            background-color: #00ffd0;
+        }
+        50% {
+            background-color: #ffffff;
+        }
+        100% {
+            background-color: #00ffd0;
+        }
+    }
+    @keyframes main-color4 {
+        0% {
+            background-color: #003cff;
+        }
+        50% {
+            background-color: #ffffff;
+        }
+        100% {
+            background-color: #003cff;
+        }
+    }
+    @keyframes main-color5 {
+        0% {
+            background-color: #c300ff;
+        }
+        50% {
+            background-color: #ffffff;
+        }
+        100% {
+            background-color: #c300ff;
+        }
+    }
+    @keyframes main-color6 {
+        0% {
+            background-color: #ff00e1;
+        }
+        50% {
+            background-color: #ffffff;
+        }
+        100% {
+            background-color: #ff00e1;
+        }
+    } */
 }
 
 
