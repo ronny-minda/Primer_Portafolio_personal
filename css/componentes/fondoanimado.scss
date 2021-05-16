@@ -1,7 +1,130 @@
 body {
-    height: auto;
+    /* height: auto;
     width: 100%;
     background-repeat: no-repeat;
-    background-image: linear-gradient(to left top, $color-5, $color-1);
+    background-image: linear-gradient(to left top, $color-5, $color-1); */
+    
+    
+    
     //background: url(https://i0.wp.com/hipertextual.com/wp-content/uploads/2013/11/Wallpaper-Monta%C3%B1as.jpg?fit=1200%2C800&ssl=1);
+    background-image: url(../../img/fondodepantalla.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+/*     background-attachment: inherit; */
+    height: 100%;
+    width: 100%;
+
+    .opacidad-fondo {
+        background-color: #5f5f5f2f;
+        padding: 2% 3%;
+        height: 100%;
+        width: 100%;
+        
+        .margen {
+            backdrop-filter: blur(15px);/* HEREDA OPACIDAD PARA TODO  */
+            border-radius: 2rem;
+            position: relative;
+            background-color: #33333354;
+            
+        }
+    }
+
+    
+    
+    /* .animacion1 {
+        height: 50rem;
+        width: 50rem;
+        position: absolute;
+        clip-path: polygon(0 100%, 0 0, 20% 11%, 26% 36%, 55% 44%, 67% 74%, 91% 81%, 100% 100%);
+
+
+
+        animation: fondoa 1s linear infinite;
+    }
+    .animacion2 {
+        height: 50rem;
+        width: 50rem;
+        position: absolute;
+        clip-path: polygon(100% 0, 100% 100%, 81% 92%, 74% 72%, 57% 68%, 54% 47%, 34% 44%, 27% 21%, 8% 15%, 0 0);
+
+
+
+        animation: fondoa 1s linear infinite;
+    }
+    .ani1 {
+        background-color: #342c0b;
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+    }
+    .ani2 {
+        background-color: #bf761f;
+        height: 80%;
+        width: 80%;
+        left: 0;
+        bottom: 0;
+    }
+    .ani3 {
+        background-color: $color-neon-3;
+        height: 60%;
+        width: 60%;
+        left: 0;
+        bottom: 0;
+    }
+    .ani4 {
+        background-color: $color-neon-4;
+        height: 30%;
+        width: 30%;
+        left: 0;
+        bottom: 0;
+    }
+    .ani5 {
+        background-color: rgb(183, 0, 255);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+    }
+    .ani6 {
+        background-color: rgb(255, 217, 0);
+        height: 80%;
+        width: 80%;
+        top: 0;
+        right: 0;
+    }
+    .ani7 {
+        background-color: rgb(255, 102, 0);
+        height: 60%;
+        width: 60%;
+        top: 0;
+        right: 0;
+    }
+    .ani8 {
+        background-color: rgba(0, 255, 221, 0.994);
+        height: 30%;
+        width: 30%;
+        top: 0;
+        right: 0;
+    }
+    .ani {
+        background-color: rgba(255, 255, 255, 0.385);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        backdrop-filter: blur(15px);
+        filter: contrast(100);
+    }
+
+    @keyframes fondoa {
+        0% {
+
+        }
+        50% {
+
+        }
+        100% {
+
+        }
+    } */
 }

@@ -1,7 +1,7 @@
 const menu = document.getElementById('btn-menu');
-const hover1 = document.getElementById('hover1');
+/* const hover1 = document.getElementById('hover1');
 const hover2 = document.getElementById('hover2');
-const hover3 = document.getElementById('hover3');
+const hover3 = document.getElementById('hover3'); */
 
 var hover;
 
@@ -9,7 +9,8 @@ var hover;
 
 /* MENU DESPLEGABLE */
 menu.addEventListener('click', () => {
-    document.getElementById('menu').classList.toggle('menu-activo');
+
+    document.getElementById('cambimenu').classList.toggle('menu-interno-activo');
 });
 
 
