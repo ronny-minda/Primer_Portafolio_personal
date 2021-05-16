@@ -48,7 +48,7 @@ html {
 
 body::-webkit-scrollbar {
 	width: 8px;
-    /* background-color: $color-btn1; */
+    background-color: #ffe1e1;
 }
 
 
@@ -59,4 +59,8 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-thumb:hover {
 	background: $color-7;
+}
+
+.body-sinscroll {
+    overflow: hidden;
 }

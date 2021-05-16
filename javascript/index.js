@@ -9,8 +9,8 @@ var hover;
 
 /* MENU DESPLEGABLE */
 menu.addEventListener('click', () => {
-
     document.getElementById('cambimenu').classList.toggle('menu-interno-activo');
+    document.getElementById('body').classList.toggle('body-sinscroll');
 });
 
 

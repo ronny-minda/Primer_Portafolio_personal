@@ -16,7 +16,7 @@ html {
 
 body::-webkit-scrollbar {
   width: 8px;
-  /* background-color: $color-btn1; */
+  background-color: #ffe1e1;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -26,6 +26,10 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-thumb:hover {
   background: #a0b1c7;
+}
+
+.body-sinscroll {
+  overflow: hidden;
 }
 
 body {
@@ -154,23 +158,29 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 6rem;
+  height: 6.5rem;
   border: 2px solid rgba(163, 163, 163, 0.549);
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
 }
 header .logo {
+  height: 4rem;
+  width: 4rem;
   padding: 0 1rem;
   background-color: red;
   /* margin: auto; */
   margin: 1rem;
+}
+header .menu-movil {
+  height: auto;
+  width: auto;
 }
 header .menu-movil img {
   display: none;
@@ -180,7 +190,7 @@ header .menu-movil img {
 header .menu-movil .menu-interno {
   height: 100%;
   width: 100%;
-  background-color: blue;
+  /* background-color: rgb(255, 0, 0); */
   position: absolute;
   top: 0;
   right: 0;
@@ -190,19 +200,25 @@ header .menu-movil .menu-interno {
   transition: 1s;
   z-index: 30;
   border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
 }
 header .menu-movil .menu-interno-activo {
   -webkit-clip-path: circle(500% at 100% 0%);
           clip-path: circle(500% at 100% 0%);
 }
-header ul {
+header .ul-escritorio {
   display: inline-block;
   height: 2.5rem;
+  margin-left: 15%;
 }
-header ul li {
+header .ul-escritorio li {
   display: inline-block;
 }
-header ul li a {
+header .ul-escritorio li a {
   color: #7c7c7c;
   font-size: 1.8rem;
   text-decoration: none;
@@ -210,9 +226,13 @@ header ul li a {
   transition: 0.2s;
   height: 100%;
   width: 100%;
-  padding: 1.3rem;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  padding: 1.6rem 1.8rem;
 }
-header ul li a:hover {
+header .ul-escritorio li a:hover {
   color: white;
   border: 2px solid white;
   border-top: 0px;
@@ -220,14 +240,20 @@ header ul li a:hover {
   border-right: 0px;
 }
 @media (max-width: 760px) {
-  header ul {
+  header .ul-escritorio {
     display: none;
+  }
+  header .logo {
+    margin-right: 40%;
+  }
+  header .menu-movil {
+    margin-left: 25%;
   }
   header .menu-movil img {
     display: block;
     height: 3rem;
     width: 3rem;
-    margin: 0 0 0 93%;
+    /* margin: 0 0 0 93%; */
     position: relative;
     left: 0;
   }
