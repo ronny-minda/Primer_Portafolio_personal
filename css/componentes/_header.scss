@@ -29,9 +29,9 @@ header {
             z-index: 50;
         }
         .menu-interno {
-            height: 100%;
+            height: 40%;
             width: 100%;
-            /* background-color: rgb(255, 0, 0); */
+            background-color: #000000c9;
             position: absolute;
             top: 0;
             right: 0;
@@ -39,16 +39,66 @@ header {
             transition: 1s;
             z-index: 30;
             border-radius: 2rem;
-            display: flex;
-            backdrop-filter: blur(15px);
+            
+            
+            /* backdrop-filter: blur(15px); */
             ul {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 8rem 9rem 9rem 9rem 9rem 8rem;
+                .li1 {
+                    grid-column: 3 / 5;
+                    grid-row: 2 / 3;
+                    a {
+                        padding: 1rem 5.5rem;
+                    }
+                }
+                .li2 {
+                    grid-column: 3 / 5;
+                    grid-row: 3 / 4;
+                    a {
+                        padding: 1rem 2rem;
+                    }
+                }
+                .li3 {
+                    grid-column: 3 / 5;
+                    grid-row: 4 / 5;
+                    a {
+                        padding: 1rem 3.5rem;
+                    }
+                }
+                .li4 {
+                    grid-column: 3 / 5;
+                    grid-row: 5 / 6;
+                    a {
+                        padding: 1rem 1.6rem;
+                    }
+                }
+
                 li {
-                    
+                    height: 100%;
+                    width: 100%;
+                    text-align: center;
+                    list-style: none;
+                    a {
+                        color: rgb(255, 255, 255);
+                        text-decoration: none;
+                        font-size: 3rem;
+                        
+                        /* background-color: $color-btn2; */
+                        box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 0px 0px 23px 13px rgba(0,0,0,0);
+                        border-radius: 1rem;
+                        transition: 0.2s;
+                    }
+                    a:hover {
+                        background-color: $color-btn2;
+                        color: #000;
+                    }
                 }
             }
         }
         .menu-interno-activo {
-            clip-path: circle(500% at 100% 0%);
+            clip-path: circle(200% at 100% 0%);
         }
 
         
