@@ -1,0 +1,41 @@
+.des-sobre-mi {
+    margin-top: 6rem;
+    background-color: #00000065;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+
+    section {
+        h2 {
+            padding: 2rem 0 0 3rem;
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.5rem;
+            padding: 0 0 3rem 4rem;
+        }
+    }
+    img {
+        height: 20rem;
+        width: 30%;
+        box-shadow: 10px 10px 0px 4px #000;
+        margin: 0 5rem 0 2rem;
+        object-fit: cover;
+    }
+}
+@media (max-width: 760px) {
+    .des-sobre-mi {
+        flex-direction: column;
+        align-items: center;
+        section {
+            p {
+                padding: 0 3rem 0 3rem;
+            }
+        }
+        img {
+            width: 60%;
+            margin: 2rem 0 3rem 0;
+        }
+    }
+}

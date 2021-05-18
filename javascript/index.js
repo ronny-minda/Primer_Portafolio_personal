@@ -1,42 +1,52 @@
 const menu = document.getElementById('btn-menu');
-/* const hover1 = document.getElementById('hover1');
-const hover2 = document.getElementById('hover2');
-const hover3 = document.getElementById('hover3'); */
-
-var hover;
-
+const li1 = document.getElementById('li1');
+const li2 = document.getElementById('li2');
+const li3 = document.getElementById('li3');
+const li4 = document.getElementById('li4');
+const body = document.getElementById('body');
 
 
 /* MENU DESPLEGABLE */
 menu.addEventListener('click', () => {
     document.getElementById('cambimenu').classList.toggle('menu-interno-activo');
-    document.getElementById('body').classList.toggle('body-sinscroll');
+    document.getElementById('body').classList.toggle('sinscroll');
+});
+li1.addEventListener('click', () => {
+    document.getElementById('cambimenu').classList.toggle('menu-interno-activo');
+    document.getElementById('body').classList.toggle('sinscroll');
+});
+li2.addEventListener('click', () => {
+    document.getElementById('cambimenu').classList.toggle('menu-interno-activo');
+    document.getElementById('body').classList.toggle('sinscroll');
+});
+li3.addEventListener('click', () => {
+    document.getElementById('cambimenu').classList.toggle('menu-interno-activo');
+    document.getElementById('body').classList.toggle('sinscroll');
+});
+li4.addEventListener('click', () => {
+    document.getElementById('cambimenu').classList.toggle('menu-interno-activo');
+    document.getElementById('body').classList.toggle('sinscroll');
 });
 
 
-/* 
-hover1.addEventListener("mouseover",(e)=>{
-    document.getElementById('menu').classList.toggle('menu-activo');
-});
-hover1.addEventListener("mouseout",(e)=>{
-    alert("hover1 salida");
-});
+/* window.body.addEventListener(scroll, function () {
+    let scroll = document.getElementById('home');
+    let posicion = scroll.getBoundingClientRect().top;
+    console.log(posicion);
+})
 
 
-hover2.addEventListener("mouseover",(e)=>{
-    alert("hove2 entrada");
-});
-hover2.addEventListener("mouseout",(e)=>{
-    alert("hover2 salida");
-});
+
  */
 
 
 
-/* hover3.addEventListener("mouseover",(e)=>{
-    doument.getElementById('cambio3').classList.toggle('prende');
 
-});
-hover3.addEventListener("mouseout",(e)=>{
-    document.getElementById('cambio3').classList.toggle('prende');
-}); */
+
+
+
+
+
+
+
+

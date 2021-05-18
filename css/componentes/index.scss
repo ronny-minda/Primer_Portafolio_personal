@@ -1,4 +1,38 @@
 @import "./variables";
 @import "./fondoanimado";
-@import "./_header";
-@import "./main";
+@import "./header";
+.agust-scoll {
+    overflow: auto;
+    overflow-x: hidden;
+    position: static;
+    height: calc(100% - 6.5rem);
+    width: 100%;
+    
+    scroll-behavior: smooth;
+    /* backdrop-filter: blur(15px); */
+    /* background-color: #0000004a; */
+    border-radius: 0rem 0rem 2rem 2rem;
+    
+    @import "./main";
+    @import "./footer";
+}
+.sinscroll {
+    overflow: hidden;
+}
+
+.agust-scoll::-webkit-scrollbar {
+    width: 10px;
+    background-color: #ffffff00;
+}
+
+.agust-scoll::-webkit-scrollbar-thumb {
+    background: #0000004a;
+    border-radius: 5px;
+}
+
+.agust-scoll::-webkit-scrollbar-thumb:hover {
+    background: #04040490;
+}
+
+@import "./_agregados";
+

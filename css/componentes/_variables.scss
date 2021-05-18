@@ -43,24 +43,5 @@ $color-neon-5: #000117;
 html {
     font-size: 62.5%;
     font-family: 'Prompt', sans-serif;
-}
-
-
-body::-webkit-scrollbar {
-	width: 8px;
-    background-color: #ffe1e1;
-}
-
-
-body::-webkit-scrollbar-thumb {
-	background: $color-8;
-	border-radius: 5px;
-}
-
-body::-webkit-scrollbar-thumb:hover {
-	background: $color-7;
-}
-
-.body-sinscroll {
-    overflow: hidden;
+    
 }
