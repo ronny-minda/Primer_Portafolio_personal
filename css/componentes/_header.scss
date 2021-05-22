@@ -14,8 +14,6 @@ header {
 
 
 
- 
-
     .logo {
         height: 4rem;
         width: 4rem;
@@ -127,6 +125,13 @@ header {
                 padding: 1.6rem 1.8rem;
             }
             a:hover {
+                color: rgb(255, 255, 255);
+                border: 2px solid rgb(255, 255, 255);
+                border-top: 0px;
+                border-left: 0px;
+                border-right: 0px;
+            }
+            .lugar {
                 color: rgb(255, 255, 255);
                 border: 2px solid rgb(255, 255, 255);
                 border-top: 0px;

@@ -345,6 +345,13 @@ header .ul-escritorio li a:hover {
   border-left: 0px;
   border-right: 0px;
 }
+header .ul-escritorio li .lugar {
+  color: white;
+  border: 2px solid white;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
 @media (max-width: 760px) {
   header .ul-escritorio {
     display: none;
